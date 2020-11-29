@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Pirata+One&display=swap');
+:root {
+  --bg-primary: #041840;
+  --bg-dark: #020e26;
+  --neutral: #1154d9;
+  --light: #e4ecff;
+  --bg-secondary: #024873;
+  /* --light: rgb(228, 236, 255); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > .moon {
+    width: 300px;
+    height: 300px;
+    background-color: var(--light);
+    border-radius: 50%;
+    position: relative;
+    z-index: 100;
+}
+
+.container > .moon::before{
+    content: 'Shunya';
+    color: var(--bg-secondary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pirata One';
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.container > .moon::after{
+    position: absolute;
+    content: 'Nothing to everything...';
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Damion';
+}
+
+.container > .moon > .shadow {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sh-one {
+    height: 350px;
+    width: 350px;
+    transform: translate(-25px, -25px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sh-two {
+    height: 400px;
+    width: 400px;
+    transform: translate(-50px, -50px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sh-three {
+    height: 450px;
+    width: 450px;
+    transform: translate(-75px, -75px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
