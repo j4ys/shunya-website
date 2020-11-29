@@ -5,7 +5,15 @@
   --neutral: #1154d9;
   --light: #e4ecff;
   --bg-secondary: #024873;
-  /* --light: rgb(228, 236, 255); */
+
+  /* new pallet */
+  --color-1: #022547;
+  --color-2: #f0f5fb;
+  --color-3: #296c99;
+  --color-4: #6890af;
+  --color-5: #cbd8e3;
+  --color-6: #b0c2d1;
+  --color-7: #95a5b5;
 }
 
 * {
